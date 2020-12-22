@@ -87,10 +87,12 @@ def calc_score(deck):
     print('The result is: %d'%res)
     return res
     
-# winner, player = play_combat(deck1, deck2)
-# res = calc_score(winner)
-# print(res)
+winner, player = play_combat(deck1, deck2)
+res1 = calc_score(winner)
+
 
 winner,player= play_recursive_combat(d1, d2)
 res=calc_score(winner)
-print(res)
+print('Result, part 1: ', res1)
+print('Result, part 2: ', res)
+
